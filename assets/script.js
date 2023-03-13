@@ -150,8 +150,7 @@ const Questions = [{
     ]
 
 }
-
-]
+];
 
 // Set start
 var start = true;
@@ -175,7 +174,6 @@ const op1 = document.getElementById('op1');
 const op2 = document.getElementById('op2');
 const op3 = document.getElementById('op3');
 const op4 = document.getElementById('op4');
-
 
 // Providing option text
 op1.innerText = Questions[id].a[0].text;
