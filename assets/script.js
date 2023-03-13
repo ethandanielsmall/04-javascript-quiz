@@ -1,59 +1,147 @@
 
-// questions: 
-// what was javascript built off of? java, typecript, python, or ecmascript? (ecmascript)
-// 
-// "undefined" is a reserved word? true, false (false)
-// 
-// what does NaN stand for? not a number, near area network, none as null, next alert now (not a number)
-// 
-// how long did it take to develop javascript? 10 days, 10 weeks, 10 months, 10 years (10 days)
-// 
-// can numbers be put into a string? yes, no (yes)
-//
-// when was javacript invented and released? 1995, 1999, 2010, 2015 (1995)
-// 
-// why was javascript made? to improve upon ecmascript, to handle more traffic to disneyland's website, for a specific company's browser, to help the robot sofia learn langage (for a specific company's browser)
-// 
-// what was javascript's original name going to be? mocha, spock, eich, energi (mocha)
-// 
-// brendan eich created javascript. *fun fact here*
-// 
-// when did brendan eich learn programming middle-highschool, college, late 20's, early 40's (college)
-// 
-// who created javascript? brendan eich, tucker beauchamp, guido van rossum, brent spiner (brendan eich)
-// 
-// what do arrays go inside of? brackets, double quotes, single quotes, parenthases
-// 
-// w
-// 
-// w
-// 
-// w
-
-
-// Questions will be asked
+// Questions will be asked (should be 15 total??)
 const Questions = [{
     id: 0,
-    q: "What is capital of India?",
-    a: [{ text: "gandhinagar", isCorrect: false },
-        { text: "Surat", isCorrect: false },
-        { text: "Delhi", isCorrect: true },
-        { text: "mumbai", isCorrect: false }
+    q: "what was javascript built off of?",
+    a: [{ text: "typescript", isCorrect: false },
+        { text: "python", isCorrect: false },
+        { text: "ecmascript", isCorrect: true },
+        { text: "java", isCorrect: false }
     ]
 
 },
 {
     id: 1,
-    q: "What is the capital of Thailand?",
-    a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-        { text: "phuket", isCorrect: false },
-        { text: "Ayutthaya", isCorrect: false },
-        { text: "Bangkok", isCorrect: true }
+    q: "what do arrays go inside of?",
+    a: [{ text: "double quotes", isCorrect: false,},
+        { text: "single quotes", isCorrect: false },
+        { text: "parentheses", isCorrect: false },
+        { text: "brackets", isCorrect: true }
     ]
 
 },
 {
     id: 2,
+    q: "what does NaN stand for?",
+    a: [{ text: "near area network", isCorrect: false },
+        { text: "not a number", isCorrect: true },
+        { text: "none as null", isCorrect: false },
+        { text: "new alert next", isCorrect: false }
+    ]
+
+},
+{
+    id: 3,
+    q: "who made javascript?",
+    a: [{ text: "tucker beauchamp", isCorrect: false },
+        { text: "brendan eich", isCorrect: true },
+        { text: "guido van rossum", isCorrect: false },
+        { text: "brent spiner", isCorrect: false }
+    ]
+
+},
+{
+    id: 4,
+    q: "when did brendan eich learn programming?",
+    a: [{ text: "middle-high school", isCorrect: false },
+        { text: "college", isCorrect: true },
+        { text: "late 20's", isCorrect: false },
+        { text: "early 40's", isCorrect: false }
+    ]
+
+},
+{
+    id: 5,
+    q: "what was javascript's original name going to be?",
+    a: [{ text: "spock", isCorrect: false },
+        { text: "energi", isCorrect: false },
+        { text: "mocha", isCorrect: true },
+        { text: "eich", isCorrect: false }
+    ]
+
+},
+{
+    id: 6,
+    q: "how long did it take to develop javascript?",
+    a: [{ text: "10 days", isCorrect: true },
+        { text: "10 weeks", isCorrect: false },
+        { text: "10 months", isCorrect: true },
+        { text: "10 years", isCorrect: false }
+    ]
+
+},
+{
+    id: 7,
+    q: "when was javascript released?",
+    a: [{ text: "1975", isCorrect: false },
+        { text: "1995", isCorrect: true },
+        { text: "2010", isCorrect: false },
+        { text: "2015", isCorrect: false }
+    ]
+
+},
+{
+    id: 8,
+    q: "why was javascript made?",
+    a: [{ text: "to improve upon ecmascript", isCorrect: false },
+        { text: "to handle more traffic to disneyland's website", isCorrect: false },
+        { text: "to help the robot sofia learn language", isCorrect: false },
+        { text: "for a specific company's browser", isCorrect: true }
+    ]
+
+},
+{
+    id: 9,
+    q: "What is the capital of Gujarat",
+    a: [{ text: "surat", isCorrect: false },
+        { text: "vadodara", isCorrect: false },
+        { text: "gandhinagar", isCorrect: true },
+        { text: "rajkot", isCorrect: false }
+    ]
+
+},
+{
+    id: 10,
+    q: "What is the capital of Gujarat",
+    a: [{ text: "surat", isCorrect: false },
+        { text: "vadodara", isCorrect: false },
+        { text: "gandhinagar", isCorrect: true },
+        { text: "rajkot", isCorrect: false }
+    ]
+
+},
+{
+    id: 11,
+    q: "What is the capital of Gujarat",
+    a: [{ text: "surat", isCorrect: false },
+        { text: "vadodara", isCorrect: false },
+        { text: "gandhinagar", isCorrect: true },
+        { text: "rajkot", isCorrect: false }
+    ]
+
+},
+{
+    id: 12,
+    q: "What is the capital of Gujarat",
+    a: [{ text: "surat", isCorrect: false },
+        { text: "vadodara", isCorrect: false },
+        { text: "gandhinagar", isCorrect: true },
+        { text: "rajkot", isCorrect: false }
+    ]
+
+},
+{
+    id: 13,
+    q: "What is the capital of Gujarat",
+    a: [{ text: "surat", isCorrect: false },
+        { text: "vadodara", isCorrect: false },
+        { text: "gandhinagar", isCorrect: true },
+        { text: "rajkot", isCorrect: false }
+    ]
+
+},
+{
+    id: 14,
     q: "What is the capital of Gujarat",
     a: [{ text: "surat", isCorrect: false },
         { text: "vadodara", isCorrect: false },
@@ -138,6 +226,7 @@ op4.addEventListener("click", () => {
     op4.style.backgroundColor = "lightgoldenrodyellow";
     selected = op4.value;
 })
+
 
 // Grabbing the evaluate button
 const evaluate = document.getElementsByClassName("evaluate");
