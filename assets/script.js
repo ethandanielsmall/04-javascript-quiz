@@ -132,16 +132,6 @@ const Questions = [{
 },
 {
     id: 13,
-    q: "What is the capital of Gujarat",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
-    ]
-
-},
-{
-    id: 14,
     q: "last question",
     a: [{ text: "surat", isCorrect: false },
         { text: "vadodara", isCorrect: false },
@@ -225,18 +215,55 @@ op4.addEventListener("click", () => {
 })
 
 // Grabbing the evaluate button
-const evaluate = document.getElementsByClassName("evaluate");
+// const evaluate = document.getElementsByClassName("evaluate");
 
 // Evaluate method
-evaluate[0].addEventListener("click", () => {
-    if (selected == "true") {
-        result[0].innerHTML = "True";
-        result[0].style.color = "green";
-    } else {
-        result[0].innerHTML = "False";
-        result[0].style.color = "red";
-    }
-})
+// evaluate[0].addEventListener("click", () => {
+//     if (selected == "true") {
+//         result[0].innerHTML = "True";
+//         result[0].style.color = "green";
+//     } else {
+//         result[0].innerHTML = "False";
+//         result[0].style.color = "red";
+//     }
+// })
+
+op1.addEventListener("click", () => {
+    start = false;
+        if (id < 16) {
+            id++;
+            iterate(id);
+            console.log(id);
+        }
+    });
+
+op2.addEventListener("click", () => {
+    start = false;
+        if (id < 16) {
+            id++;
+            iterate(id);
+            console.log(id);
+        }
+    });
+
+op3.addEventListener("click", () => {
+    start = false;
+        if (id < 16) {
+            id++;
+            iterate(id);
+            console.log(id);
+        }
+    });
+    
+op4.addEventListener("click", () => {
+    start = false;
+        if (id < 16) {
+            id++;
+            iterate(id);
+            console.log(id);
+        }
+    });
+
 }
 
 if (start) {
@@ -247,15 +274,7 @@ iterate("0");
 const next = document.getElementsByClassName('next')[0];
 var id = 0;
 
-next.addEventListener("click", () => {
-start = false;
-if (id < 16) {
-    id++;
-    iterate(id);
-    console.log(id);
-}
 
-});
 
 // MAKE SURE TO ADD 'setTimeout' and i think 'localstorage' will help with
 // the whole 'look at my own answers' thingy :/
