@@ -271,8 +271,8 @@ iterate("0");
 }
 
 // Next button and method
-const next = document.getElementsByClassName('next')[0];
-var id = 0;
+// const next = document.getElementsByClassName('next')[0];
+// var id = 0;
 
 
 
