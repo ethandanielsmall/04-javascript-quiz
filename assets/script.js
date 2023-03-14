@@ -142,7 +142,7 @@ const Questions = [{
 },
 {
     id: 14,
-    q: "What is the capital of Gujarat",
+    q: "last question",
     a: [{ text: "surat", isCorrect: false },
         { text: "vadodara", isCorrect: false },
         { text: "gandhinagar", isCorrect: true },
@@ -164,7 +164,6 @@ result[0].innerText = "";
 
 // Getting the question
 const question = document.getElementById("question");
-
 
 // Setting the question text
 question.innerText = Questions[id].q;
@@ -225,7 +224,6 @@ op4.addEventListener("click", () => {
     selected = op4.value;
 })
 
-
 // Grabbing the evaluate button
 const evaluate = document.getElementsByClassName("evaluate");
 
@@ -251,7 +249,7 @@ var id = 0;
 
 next.addEventListener("click", () => {
 start = false;
-if (id < 2) {
+if (id < 16) {
     id++;
     iterate(id);
     console.log(id);
