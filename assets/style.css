@@ -13,7 +13,7 @@ body{
 	width:100vw;
 	height: 100vh;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background-color: #e1ddda;
+	background-color: #e2ebe3;
 }
 
 .panel{
@@ -32,6 +32,8 @@ body{
 	background-color: #f2f0f1;
 	font-size: x-large;
 	text-align: center;
+	color: #353536;
+	border-color: #353536;
 }
 
 .result{
@@ -50,7 +52,8 @@ body{
 	padding: 5px;
 	width: 80vw;
 	min-height: 1em;
-	background-color: #e1ddda;
+	background-color: #e2ebe3;
+	color: #353536
 }
 
 .option{
@@ -58,16 +61,17 @@ body{
 	width: 15vw;
 	min-height: 1em;
 	font-size: larger;
-	background-color: #f1c8ce;
-	border-radius: 25%;
+	background-color: #c8a9e3;
+	border-radius: 50%;
+	border-color: #353536;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .option:hover{
-	background-color: lightgoldenrodyellow;
+	background-color: #615aa2;
 }
 
-.navigation{
+/* .navigation{
 	width: 30vw;
 	min-height: 1em;
 	margin: 10px;
@@ -77,7 +81,7 @@ body{
 	background-color:#e1ddda;
 }
 
-/* .evaluate,.next{
+ .evaluate,.next{
 	width:30vw;
 	height: 8vh;
 	padding: 5px;

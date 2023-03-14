@@ -122,16 +122,6 @@ const Questions = [{
 },
 {
     id: 12,
-    q: "What is the capital of Gujarat",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
-    ]
-
-},
-{
-    id: 13,
     q: "last question",
     a: [{ text: "surat", isCorrect: false },
         { text: "vadodara", isCorrect: false },
