@@ -258,3 +258,6 @@ if (id < 2) {
 }
 
 });
+
+// MAKE SURE TO ADD 'setTimeout' and i think 'localstorage' will help with
+// the whole 'look at my own answers' thingy :/
