@@ -35,6 +35,12 @@ function startGame() {
     }, 1000);
   }
 
+
+
+
+//   if (op1 gets clicked and the isCorrect: false, then run the function SubtractTime
+//   }
+
 // Questions will be asked (should be 15 total??)
 const Questions = [{
     id: 0,
@@ -275,6 +281,38 @@ op4.addEventListener("click", () => {
     });
 
 }
+
+op1.addEventListener("click", () => {
+    if (selected == "false") {
+        function SubtractTime() {
+            timerCount = timerCount-5;
+          }
+    }
+})
+
+op2.addEventListener("click", () => {
+    if (selected == "false") {
+        function SubtractTime() {
+            timerCount = timerCount-5;
+          }
+    }
+})
+
+op3.addEventListener("click", () => {
+    if (selected == "false") {
+        function SubtractTime() {
+            timerCount = timerCount-5;
+          }
+    }
+})
+
+op4.addEventListener("click", () => {
+    if (selected == "false") {
+        function SubtractTime() {
+            timerCount = timerCount-5;
+          }
+    }
+})
 
 if (start) {
 iterate("0");
