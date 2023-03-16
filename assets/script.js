@@ -4,11 +4,13 @@ startButton.addEventListener("click", startGame);
 
 function startGame() {
     isWin = false;
-    timerCount = 10;
+    timerCount = 30;
     // Prevents start button from being clicked when round is in progress
     startButton.disabled = true;
     // render questions ??
     startTimer()
+
+    //if isCorrect = false, -5 seconds
   }
 
   function startTimer() {
