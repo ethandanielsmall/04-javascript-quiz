@@ -29,16 +29,3 @@ body{
   height: 200px;
   margin-top: 40px;
 }
-.timer {
-  height: 240px;
-  padding: 10px;
-  background: #13293d;
-  color: #fff;
-  text-align: center;
-}
-.timer-text {
-  padding: 55px;
-}
-.timer {
-  height: 200px;
-}
