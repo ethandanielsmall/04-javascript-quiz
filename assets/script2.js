@@ -134,7 +134,7 @@ const myQuestions = [
       d: "new alert next"
     },
     correctAnswer: "b"
-  }
+  },
   {
     question: "who made javascript?",
     answers: {
