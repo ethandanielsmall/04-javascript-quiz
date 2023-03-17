@@ -10,3 +10,5 @@ https://stackoverflow.com/questions/51693992/what-is-the-right-way-to-store-user
 https://qrowpilled.tumblr.com/ AND/OR toddkin.tumblr.com for their color pallette "   "
 
 https://www.sitepoint.com/simple-javascript-quiz/
+
+https://codepen.io/boopalan002/pen/yKZVGa

@@ -1,3 +1,38 @@
+var startButton = document.querySelector(".start-button");
+var timerElement = document.querySelector(".timer-count");
+var timer;
+var timerCount;
+
+function startGame() {
+  isWin = false;
+  timerCount = 10;
+  // Prevents start button from being clicked when round is in progress
+  startButton.disabled = true;
+  startTimer()
+}
+
+function startTimer() {
+  // Sets timer
+  timer = setInterval(function() {
+    timerCount--;
+    timerElement = timerCount;
+    if (timerCount >= 0) {
+      // Tests if win condition is met
+      if (isWin && timerCount > 0) {
+        // Clears interval and stops timer
+        clearInterval(timer);
+        console.log("time is going??")
+      }
+    }
+    // Tests if time has run out
+    if (timerCount === 0) {
+      // Clears interval
+      clearInterval(timer);
+      console.log("time ran out")
+    }
+  }, 1000);
+  
+}
 
 function buildQuiz(){
   // variable to store the HTML output
@@ -210,6 +245,8 @@ let currentSlide = 0;
 showSlide(currentSlide);
 
 // on submit, show results
+// listen for the click of the start button, then execute the timer
+startButton.addEventListener("click", startGame);
 submitButton.addEventListener('click', showResults);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
