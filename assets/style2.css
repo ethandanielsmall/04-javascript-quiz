@@ -29,3 +29,8 @@ body{
   height: 200px;
   margin-top: 40px;
 }
+.results-container{
+  position: relative;
+  height: 100px;
+  margin-top: 10px;
+}

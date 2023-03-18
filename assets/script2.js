@@ -1,3 +1,5 @@
+const score = ['0']
+
 function buildQuiz(){
   // variable to store the HTML output
   const output = [];
@@ -61,6 +63,7 @@ function showResults(){
 
   // show number of correct answers out of total
   resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+  localStorage.setItem(score, resultsContainer.innerHTML)
 }
 
 function showSlide(n) {
@@ -91,8 +94,14 @@ function showPreviousSlide() {
   showSlide(currentSlide - 1);
 }
 
+function pastResults() {
+  localStorage.getItem('score')
+  console.log('score')
+}
+
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
+const resultsContainer2 = document.getElementById('results-container');
 const submitButton = document.getElementById('submit');
 
 const myQuestions = [
@@ -190,6 +199,7 @@ const myQuestions = [
 
 // display quiz right away
 buildQuiz();
+pastResults();
 
 // Pagination
 const previousButton = document.getElementById("previous");
@@ -201,7 +211,13 @@ let currentSlide = 0;
 showSlide(currentSlide);
 
 // on submit, show results
-// listen for the click of the start button, then execute the timer
 submitButton.addEventListener('click', showResults);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
+
+// i want to store all previous scores
+// make a box that stores these things. container?
+// after every 'show results' is loaded, inside the showresults function
+// store the results (_ out of _) inside local storage
+// take the stuff in local storage and display it in the container/box under
+// the questions
