@@ -205,28 +205,16 @@ function countDownTimer() {
   // when timer expires, hit the submit button for them
 }
 
-// function startTimer(duration, display) {
-//   var timer = duration, minutes, seconds;
-//   setInterval(function () {
-//       minutes = parseInt(timer / 60, 10);
-//       seconds = parseInt(timer % 60, 10);
+var count = 20;
 
-//       minutes = minutes < 10 ? "0" + minutes : minutes;
-//       seconds = seconds < 10 ? "0" + seconds : seconds;
-
-//       display.textContent = minutes + ":" + seconds;
-
-//       if (--timer < 0) {
-//           timer = duration;
-//       }
-//   }, 1000);
-// }
-
-// window.onload = function () {
-//   var fiveMinutes = 60 * 5,
-//       display = document.querySelector('#time');
-//   startTimer(fiveMinutes, display);
-// };
+var timer = setInterval(function() {
+  count--;
+  if (count <= 0) {
+    clearInterval(timer);
+    showResults();
+  }
+  document.getElementById("timer").innerHTML = count + " seconds";
+}, 1000);
 
 // display quiz right away
 buildQuiz();
@@ -251,3 +239,25 @@ nextButton.addEventListener("click", showNextSlide);
 // store the results (_ out of _) inside local storage
 // take the stuff in local storage and display it in the container/box under
 // the questions
+
+// ------------------------ chatgpt example
+
+// // Define an array of game scores
+// const gameScores = [10, 20, 30, 40, 50];
+
+// // Store the game scores in localStorage
+// localStorage.setItem("gameScores", JSON.stringify(gameScores));
+
+// // Retrieve the game scores from localStorage
+// const storedGameScores = localStorage.getItem("gameScores");
+
+// // If there are game scores stored in localStorage, parse the JSON and assign it to a variable
+// if (storedGameScores) {
+//   const parsedGameScores = JSON.parse(storedGameScores);
+
+//   // Do something with the game scores, such as display them on the screen
+//   console.log(parsedGameScores);
+// } else {
+//   // If there are no game scores stored in localStorage, display an error message or use default values
+//   console.log("No game scores found in localStorage");
+// }

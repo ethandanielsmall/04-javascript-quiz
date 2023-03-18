@@ -18,3 +18,5 @@ https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860ba
 https://blog.bitsrc.io/how-to-use-localstorage-in-javascript-an-easy-guide-91aad566e4de
 
 https://blog.logrocket.com/localstorage-javascript-complete-guide/#howdoeslocalstoragework
+
+https://chat.openai.com/
