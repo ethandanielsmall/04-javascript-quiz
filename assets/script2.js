@@ -1,4 +1,5 @@
 const score = ['0']
+textContent = "youre doing great sweaty"
 
 function buildQuiz(){
   // variable to store the HTML output
@@ -84,6 +85,8 @@ function showSlide(n) {
     nextButton.style.display = 'inline-block';
     submitButton.style.display = 'none';
   }
+
+//  timer();
 }
 
 function showNextSlide() {
@@ -98,6 +101,37 @@ function pastResults() {
   localStorage.getItem('score')
   console.log('score')
 }
+
+function countDownTimer() {
+  // 20 mins lmao
+  // have it count down
+  // try to display it
+  // turn red at 5 seconds
+  // when timer expires, hit the submit button for them
+}
+
+function startTimer(duration, display) {
+  var timer = duration, minutes, seconds;
+  setInterval(function () {
+      minutes = parseInt(timer / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = minutes + ":" + seconds;
+
+      if (--timer < 0) {
+          timer = duration;
+      }
+  }, 1000);
+}
+
+window.onload = function () {
+  var fiveMinutes = 60 * 5,
+      display = document.querySelector('#time');
+  startTimer(fiveMinutes, display);
+};
 
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
