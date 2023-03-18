@@ -1,5 +1,100 @@
-const score = ['0']
-textContent = "youre doing great sweaty"
+const quizContainer = document.getElementById('quiz');
+const resultsContainer = document.getElementById('results');
+const resultsContainer2 = document.getElementById('results-container');
+const submitButton = document.getElementById('submit');
+
+const myQuestions = [
+  {
+    question: "what was javascript built off of?",
+    answers: {
+      a: "typescript",
+      b: "python",
+      c: "ecmascript",
+      d: "java"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "what do arrays go inside of?",
+    answers: {
+      a: "double quotes",
+      b: "single quotes",
+      c: "parenthases",
+      d: "brackets"
+    },
+    correctAnswer: "d"
+  },
+  {
+    question: "what does NaN stand for?",
+    answers: {
+      a: "near area network",
+      b: "not a number",
+      c: "none as null",
+      d: "new alert next"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "who made javascript?",
+    answers: {
+      a: "tucker beauchamp",
+      b: "brendan eich",
+      c: "guido van rossum",
+      d: "brent spiner"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "when did brendan eich learn programming?",
+    answers: {
+      a: "middle-highschool",
+      b: "college",
+      c: "late 20's",
+      d: "early 40's"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "what was javascript's original name going to be?",
+    answers: {
+      a: "spock",
+      b: "energi",
+      c: "mocha",
+      d: "eich"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "how long did it take to develop javascript?",
+    answers: {
+      a: "10 days",
+      b: "10 weeks",
+      c: "10 months",
+      d: "10 years"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "when was javascript released?",
+    answers: {
+      a: "1975",
+      b: "1995",
+      c: "2010",
+      d: "2015"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "why was javascript made?",
+    answers: {
+      a: "to improve upon ecmascript",
+      b: "to handle more traffic to dinsneyland's website",
+      c: "to help the robot sofia learn to speak",
+      d: "for a specific company's browser"
+    },
+    correctAnswer: "d"
+  },
+];
 
 function buildQuiz(){
   // variable to store the HTML output
@@ -133,103 +228,7 @@ window.onload = function () {
   startTimer(fiveMinutes, display);
 };
 
-const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
-const resultsContainer2 = document.getElementById('results-container');
-const submitButton = document.getElementById('submit');
 
-const myQuestions = [
-  {
-    question: "what was javascript built off of?",
-    answers: {
-      a: "typescript",
-      b: "python",
-      c: "ecmascript",
-      d: "java"
-    },
-    correctAnswer: "c"
-  },
-  {
-    question: "what do arrays go inside of?",
-    answers: {
-      a: "double quotes",
-      b: "single quotes",
-      c: "parenthases",
-      d: "brackets"
-    },
-    correctAnswer: "d"
-  },
-  {
-    question: "what does NaN stand for?",
-    answers: {
-      a: "near area network",
-      b: "not a number",
-      c: "none as null",
-      d: "new alert next"
-    },
-    correctAnswer: "b"
-  },
-  {
-    question: "who made javascript?",
-    answers: {
-      a: "tucker beauchamp",
-      b: "brendan eich",
-      c: "guido van rossum",
-      d: "brent spiner"
-    },
-    correctAnswer: "b"
-  },
-  {
-    question: "when did brendan eich learn programming?",
-    answers: {
-      a: "middle-highschool",
-      b: "college",
-      c: "late 20's",
-      d: "early 40's"
-    },
-    correctAnswer: "b"
-  },
-  {
-    question: "what was javascript's original name going to be?",
-    answers: {
-      a: "spock",
-      b: "energi",
-      c: "mocha",
-      d: "eich"
-    },
-    correctAnswer: "c"
-  },
-  {
-    question: "how long did it take to develop javascript?",
-    answers: {
-      a: "10 days",
-      b: "10 weeks",
-      c: "10 months",
-      d: "10 years"
-    },
-    correctAnswer: "a"
-  },
-  {
-    question: "when was javascript released?",
-    answers: {
-      a: "1975",
-      b: "1995",
-      c: "2010",
-      d: "2015"
-    },
-    correctAnswer: "b"
-  },
-  {
-    question: "why was javascript made?",
-    answers: {
-      a: "to improve upon ecmascript",
-      b: "to handle more traffic to dinsneyland's website",
-      c: "to help the robot sofia learn to speak",
-      d: "for a specific company's browser"
-    },
-    correctAnswer: "d"
-  },
-];
 
 // display quiz right away
 buildQuiz();
