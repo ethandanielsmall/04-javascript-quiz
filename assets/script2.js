@@ -228,11 +228,8 @@ window.onload = function () {
   startTimer(fiveMinutes, display);
 };
 
-
-
 // display quiz right away
 buildQuiz();
-pastResults();
 
 // Pagination
 const previousButton = document.getElementById("previous");
