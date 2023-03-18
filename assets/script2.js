@@ -180,8 +180,6 @@ function showSlide(n) {
     nextButton.style.display = 'inline-block';
     submitButton.style.display = 'none';
   }
-
-//  timer();
 }
 
 function showNextSlide() {
@@ -195,14 +193,6 @@ function showPreviousSlide() {
 function pastResults() {
   localStorage.getItem('score')
   console.log('score')
-}
-
-function countDownTimer() {
-  // 20 mins lmao
-  // have it count down
-  // try to display it
-  // turn red at 5 seconds
-  // when timer expires, hit the submit button for them
 }
 
 var count = 20;
