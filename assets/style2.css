@@ -1,18 +1,30 @@
-body{
+body {
 	font-size: 20px;
 	font-family: sans-serif;
-	color: #333;
+	color: #fef2e3;
+  background-color: #211103;
+  text-align: center;
 }
-.question{
+
+.question {
 	font-weight: 600;
+  background-color: #9f2042;
 }
+
 .answers {
   margin-bottom: 20px;
 }
-.answers label{
+
+.answers label {
   display: block;
 }
-.slide{
+
+#submit:hover, #next:hover, #previous:hover{
+	background-color: #9f2042;
+  color: #211103;
+}
+
+.slide {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -20,17 +32,27 @@ body{
   z-index: 1;
   opacity: 0;
 }
-.active-slide{
+
+.active-slide {
   opacity: 1;
   z-index: 2;
 }
-.quiz-container{
+
+.quiz-container {
   position: relative;
   height: 200px;
   margin-top: 40px;
 }
-.results-container{
+
+.results-container {
   position: relative;
   height: 100px;
   margin-top: 10px;
 }
+
+/* color palete
+dark: 211103
+maroon: 3d1308
+red: 7b0d1e
+pink: 9f2042
+cream: fef2e3
