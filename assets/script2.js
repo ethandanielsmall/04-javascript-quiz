@@ -196,7 +196,6 @@ function pastResults() {
 }
 
 var count = 20;
-
 var timer = setInterval(function() {
   count--;
   if (count <= 0) {
@@ -251,3 +250,20 @@ nextButton.addEventListener("click", showNextSlide);
 //   // If there are no game scores stored in localStorage, display an error message or use default values
 //   console.log("No game scores found in localStorage");
 // }
+
+// ------------------------ my turn!
+
+const answerContainers = quizContainer.querySelectorAll('.answers');
+const storedGameScores = localStorage.getItem("gameScore");
+localStorage.setItem("gameScore", JSON.stringify(answerContainers));
+
+// If there are game scores stored in localStorage, parse the JSON and assign it to a variable
+if (storedGameScores) {
+  const parsedGameScores = JSON.parse(storedGameScores);
+
+  // Do something with the game scores, such as display them on the screen
+  console.log(parsedGameScores);
+} else {
+  // If there are no game scores stored in localStorage, display an error message or use default values
+  console.log("No game scores found in localStorage");
+}

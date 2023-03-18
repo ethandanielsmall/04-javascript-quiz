@@ -20,3 +20,5 @@ https://blog.bitsrc.io/how-to-use-localstorage-in-javascript-an-easy-guide-91aad
 https://blog.logrocket.com/localstorage-javascript-complete-guide/#howdoeslocalstoragework
 
 https://chat.openai.com/
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
