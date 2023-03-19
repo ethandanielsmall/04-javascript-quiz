@@ -159,7 +159,7 @@ function showResults(){
 
   // show number of correct answers out of total
   resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-  localStorage.setItem(score, resultsContainer.innerHTML)
+  localStorage.setItem(numCorrect, resultsContainer.innerHTML)
 }
 
 function showSlide(n) {
