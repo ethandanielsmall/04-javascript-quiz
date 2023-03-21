@@ -267,3 +267,11 @@ if (storedGameScores) {
   // If there are no game scores stored in localStorage, display an error message or use default values
   console.log("No game scores found in localStorage");
 }
+
+//jSON conversion
+// javascript object notation
+
+'to retriev later on' = Key
+ 'and then the thing being stored' = value
+
+ // USE PARSE !!! reinflates
