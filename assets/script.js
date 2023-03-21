@@ -204,19 +204,36 @@ submitButton.addEventListener('click', showResults);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
 
-// ------------------------ my turn!
-
-const answerContainers = quizContainer.querySelectorAll('.answers');
-const storedGameScores = localStorage.getItem("gameScore");
-localStorage.setItem("gameScore", JSON.stringify(answerContainers));
+// const answerContainers = quizContainer.querySelectorAll('.answers');
+// const storedGameScores = localStorage.getItem("gameScore");
+// localStorage.setItem("gameScore", JSON.stringify(answerContainers));
 
 // If there are game scores stored in localStorage, parse the JSON and assign it to a variable
 if (storedGameScores) {
   const parsedGameScores = JSON.parse(storedGameScores);
-
   // Do something with the game scores, such as display them on the screen
   console.log(parsedGameScores);
 } else {
   // If there are no game scores stored in localStorage, display an error message or use default values
   console.log("No game scores found in localStorage");
 }
+
+// Retrieve highscores
+let highScores = localStorage.getItem("highscores");
+if (highScores) {
+  // if they exist, Parse them
+  highScores = JSON.parse(highScores);
+} else {
+  // If they don't exist set it to an empty array
+  highScores = [];
+}
+
+// Take the users initials and score and append to our highscores array
+// {
+//   initials: "TB",
+//   score: 2
+// }
+// stringify the array
+// [{"initials": "TB", "score": 2}]
+// store in local storage
+localStorage.setItem("highscores", JSON.stringify(highScores));
