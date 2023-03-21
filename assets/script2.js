@@ -271,7 +271,7 @@ if (storedGameScores) {
 //jSON conversion
 // javascript object notation
 
-'to retriev later on' = Key
- 'and then the thing being stored' = value
+// 'to retriev later on' = Key
+// 'and then the thing being stored' = value
 
  // USE PARSE !!! reinflates
