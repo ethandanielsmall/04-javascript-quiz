@@ -97,20 +97,15 @@ const myQuestions = [
 ];
 
 function buildQuiz(){
-  // variable to store the HTML output
   const output = [];
 
-  // for each question...
   myQuestions.forEach(
     (currentQuestion, questionNumber) => {
 
-      // variable to store the list of possible answers
       const answers = [];
 
-      // and for each available answer...
       for(letter in currentQuestion.answers){
 
-        // ...add an HTML radio button
         answers.push(
           `<label>
             <input type="radio" name="question${questionNumber}" value="${letter}">
@@ -120,7 +115,6 @@ function buildQuiz(){
         );
       }
 
-      // add this question and its answers to the output
       output.push(
         `<div class="slide">
         <div class="question"> ${currentQuestion.question} </div>
@@ -130,34 +124,26 @@ function buildQuiz(){
     }
   );
 
-  // finally combine our output list into one string of HTML and put it on the page
   quizContainer.innerHTML = output.join('');
 }
 
 function showResults(){
 
-  // gather answer containers from our quiz
   const answerContainers = quizContainer.querySelectorAll('.answers');
 
-  // keep track of user's answers
   let numCorrect = 0;
 
-  // for each question...
   myQuestions.forEach( (currentQuestion, questionNumber) => {
 
-    // find selected answer
     const answerContainer = answerContainers[questionNumber];
     const selector = `input[name=question${questionNumber}]:checked`;
     const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-    // if answer is correct
     if(userAnswer === currentQuestion.correctAnswer){
-      // add to the number of correct answers
       numCorrect++;
     }
   });
 
-  // show number of correct answers out of total
   resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
   localStorage.setItem(numCorrect, resultsContainer.innerHTML)
 }
@@ -205,51 +191,18 @@ var timer = setInterval(function() {
   document.getElementById("timer").innerHTML = count + " seconds";
 }, 1000);
 
-// display quiz right away
 buildQuiz();
 
-// Pagination
 const previousButton = document.getElementById("previous");
 const nextButton = document.getElementById("next");
 const slides = document.querySelectorAll(".slide");
 let currentSlide = 0;
 
-// Show the first slide
 showSlide(currentSlide);
 
-// on submit, show results
 submitButton.addEventListener('click', showResults);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
-
-// i want to store all previous scores
-// make a box that stores these things. container?
-// after every 'show results' is loaded, inside the showresults function
-// store the results (_ out of _) inside local storage
-// take the stuff in local storage and display it in the container/box under
-// the questions
-
-// ------------------------ chatgpt example
-
-// // Define an array of game scores
-// const gameScores = [10, 20, 30, 40, 50];
-
-// // Store the game scores in localStorage
-// localStorage.setItem("gameScores", JSON.stringify(gameScores));
-
-// // Retrieve the game scores from localStorage
-// const storedGameScores = localStorage.getItem("gameScores");
-
-// // If there are game scores stored in localStorage, parse the JSON and assign it to a variable
-// if (storedGameScores) {
-//   const parsedGameScores = JSON.parse(storedGameScores);
-
-//   // Do something with the game scores, such as display them on the screen
-//   console.log(parsedGameScores);
-// } else {
-//   // If there are no game scores stored in localStorage, display an error message or use default values
-//   console.log("No game scores found in localStorage");
-// }
 
 // ------------------------ my turn!
 
@@ -267,11 +220,3 @@ if (storedGameScores) {
   // If there are no game scores stored in localStorage, display an error message or use default values
   console.log("No game scores found in localStorage");
 }
-
-//jSON conversion
-// javascript object notation
-
-// 'to retriev later on' = Key
-// 'and then the thing being stored' = value
-
- // USE PARSE !!! reinflates
