@@ -6,7 +6,9 @@ This webpage is designed to be a fun, timed javascript quiz made by Ethan "Danie
 
 ## Screenshot of the webpage TODO
 
-![screenshot of the webpage] (https://user-images.githubusercontent.com/124843114/222991783-017de593-c549-4d82-a7c6-ef22a6a5d6ba.png)
+![first screenshot of the webpage] (https://user-images.githubusercontent.com/124843114/226519416-58d99fb5-f4b4-4795-9a24-7f099d4d12b2.png)
+
+![second screenshot of the webpage] (https://user-images.githubusercontent.com/124843114/226519411-ccc04d9e-de8a-48c4-ae20-6421c005b9f4.png)
 
 ## Link to deployed application TODO
 
