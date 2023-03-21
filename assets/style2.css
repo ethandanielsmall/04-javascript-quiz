@@ -19,7 +19,7 @@ body {
   display: block;
 }
 
-#submit:hover, #next:hover, #previous:hover{
+#submit:hover, #next:hover, #previous:hover, #highScores:hover {
 	background-color: #9f2042;
   color: #211103;
 }
